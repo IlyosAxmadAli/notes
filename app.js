@@ -15,4 +15,13 @@ form.addEventListener("submit", (e) => {
   img.addEventListener("click", () => {
     li.remove();
   });
+  li.addEventListener("dblclick", () => {
+    if (li.style.backgroundColor == "bisque") {
+      li.style.backgroundColor = "cornflowerblue";
+      li.style.color = "red";
+    } else {
+      li.style.backgroundColor = "bisque";
+      li.style.color = "darkgreen";
+    }
+  });
 });
